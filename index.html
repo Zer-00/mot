@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.65">
+    <meta charset="UTF-8">
+    <title>母親</title>
+    <style>
+        body {
+            margin: 0;
+
+            width: 100vw;
+
+            height: 100vh;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: linear-gradient(to bottom, #050f1b, #082955, #0a438d);
+
+            background-size: cover;
+            background-position: center center;
+        }
+
+
+        #card {
+
+            position: relative;
+
+            perspective: 3000px;
+
+        }
+
+        section {
+            width: 560px;
+
+            height: 400px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+        }
+
+        #cover {
+
+            background-color: #0f2342;
+            color: #ffffff;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+
+        }
+
+        #cover.animate {
+            transform: rotateX(180deg);
+
+            transform-origin: 0% 0%;
+
+            transition: transform 2s;
+        }
+
+        #cover.animate>* {
+            opacity: 0;
+
+            transition: opacity 1s;
+        }
+
+        #cover:hover {
+            transform: rotateX(180deg);
+
+            transform-origin: 0% 0%;
+
+            transition: transform 3s;
+        }
+
+        #cover img {
+            height: 50%
+        }
+
+        #cover h1 {
+            font-size: 32px;
+            margin: 0px;
+        }
+
+        #cover h2 {
+            font-size: 18px;
+            margin: 0px;
+        }
+
+
+        #message {
+
+            background-color: rgba(255, 255, 255, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            backdrop-filter: blur(8px);
+        }
+
+        #message h1 {
+            margin: 0;
+        }
+
+        #message img {
+            height: 60%;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color:#FFFFFF; -webkit-text-stroke: 0.30px #CDA434;">Presione una vez en las flores</h1>
+    <main id='card'>
+        
+        <section id="cover">
+            <img src="https://i.ibb.co/NSrBxbr/7968.png ">
+            <h1 style="color:#F6F6FF">Para la mejor madre del mundo</h1>
+            <h2 style="color:#d8d8ff">La quiero ❤️</h2>
+        </section>
+        <section  id='message'>
+            <span style="text-align:center; margin-top: 8%;">
+            <h1>¡Feliz día de la madre!</h1>
+            <h2>Mamá, la estrella polar*<br>
+                En el firmamento de mi vida,<br>
+                Brillas como la más hermosa estrella.<br>
+                Madre querida, gracias por ser mi guía,<br>
+                Por tu amor que nunca parpadea.</h2>
+            <h1>Atte. Jonathan❤️</h1><br>
+        </span>
+        
+            <span style="font-size: 18px; text-align: center; align-items: center; justify-content: center;" ><b>*Estrella Polar</b>, también conocida como <b>Polaris o</b><br> <b> Estrella del Norte</b>,
+                 es una de las estrellas <b>más importantes</b><br>  en la navegación astronómica
+                 y la orientación terrestre.</span>
+        </section>
+    </main>
+</body>
+</html>
